@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arhaan Gupta | Portfolio – Cloud, AI & Big Data Engineer</title>
+  <meta name="description"
+    content="Portfolio of Arhaan Gupta – B.Tech CSE student specializing in Big Data Analytics, AI/ML, and Cloud. Explore projects, skills, and achievements." />
+  <meta name="keywords"
+    content="Arhaan Gupta, portfolio, Big Data, AI, Machine Learning, Cloud Computing, Python, React, Full Stack Developer" />
+  <meta name="author" content="Arhaan Gupta" />
+  <meta property="og:title" content="Arhaan Gupta | Portfolio" />
+  <meta property="og:description" content="Building Intelligent Systems. Exploring Cloud. Engineering the Future." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0a1a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">AG</div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cursor Glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Floating Geometric Elements -->
+  <div class="geo geo-1"></div>
+  <div class="geo geo-2"></div>
+  <div class="geo geo-3"></div>
+  <div class="geo geo-4"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">AG<span class="logo-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting anim-fade">Hello, I'm</p>
+      <h1 class="hero-name anim-fade">
+        <span class="neon-text">Arhaan</span> <span class="neon-text purple">Gupta</span>
+      </h1>
+      <div class="hero-typing-wrapper anim-fade">
+        <span class="typing-prefix">&gt;&nbsp;</span>
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-tagline anim-fade">Building Intelligent Systems. Exploring Cloud. Engineering the Future.</p>
+      <div class="hero-cta anim-fade">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Get In Touch</a>
+        <a href="Arhaan_Gupta_CV.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Resume</a>
+      </div>
+      <div class="hero-stats anim-fade">
+        <div class="stat"><span class="stat-num" data-target="5">0</span>+ <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat"><span class="stat-num" data-target="7">0</span>+ <span
+            class="stat-label">Certifications</span></div>
+        <div class="stat"><span class="stat-num" data-target="5">0</span>+ <span class="stat-label">Hackathons</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title anim-reveal">About <span class="highlight">Me</span></h2>
+      <div class="section-line"></div>
+      <div class="about-grid">
+        <div class="about-text anim-slide-right">
+          <p>
+            I'm a <strong>B.Tech Computer Science Engineering</strong> student at
+            <strong>Lovely Professional University</strong>, specializing in <strong>Big Data Analytics</strong>.
+            I thrive on building intelligent systems that solve real-world problems through
+            <strong>Machine Learning, Data Analytics, and Cloud Technologies</strong>.
+          </p>
+          <p>
+            As a former <strong>Research Intern at IIT Kharagpur</strong>, I developed annotation protocols that
+            boosted labelling accuracy by 15% and annotated over 15,000 data samples. I'm passionate about pushing
+            the boundaries of AI and leveraging data to drive impactful solutions.
+          </p>
+          <p>
+            When I'm not coding, you'll find me competing in hackathons, exploring cloud architectures, or
+            leading community initiatives. I believe in continuous learning and engineering the future, one line
+            of code at a time.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item"><i class="fas fa-graduation-cap"></i><span>B.Tech CSE (Big Data Analytics)</span>
+            </div>
+            <div class="info-item"><i class="fas fa-university"></i><span>Lovely Professional University</span></div>
+            <div class="info-item"><i class="fas fa-calendar"></i><span>Aug 2023 – Jul 2027</span></div>
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Phagwara, India</span></div>
+          </div>
+        </div>
+        <div class="about-visual anim-slide-left">
+          <div class="about-card glass-card">
+            <div class="about-code">
+              <span class="code-line"><span class="code-key">const</span> <span class="code-var">arhaan</span> =
+                {</span>
+              <span class="code-line indent"><span class="code-prop">role</span>: <span class="code-str">"CSE
+                  Student"</span>,</span>
+              <span class="code-line indent"><span class="code-prop">specialization</span>: <span class="code-str">"Big
+                  Data Analytics"</span>,</span>
+              <span class="code-line indent"><span class="code-prop">interests</span>: [<span
+                  class="code-str">"AI"</span>, <span class="code-str">"Cloud"</span>, <span
+                  class="code-str">"ML"</span>],</span>
+              <span class="code-line indent"><span class="code-prop">passion</span>: <span
+                  class="code-str">"∞"</span>,</span>
+              <span class="code-line">};</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title anim-reveal">My <span class="highlight">Skills</span></h2>
+      <div class="section-line"></div>
+      <div class="skills-grid">
+        <!-- Programming -->
+        <div class="skill-category glass-card anim-slide-up">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <div class="skill-bar-group">
+            <div class="skill-item"><span>Python</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>C / C++</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="45"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>Java</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="30"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>SQL / PL-SQL</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>R</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="35"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Web Technologies -->
+        <div class="skill-category glass-card anim-slide-up">
+          <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Technologies</h3>
+          <div class="skill-bar-group">
+            <div class="skill-item"><span>HTML / CSS</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="60"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>React</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="50"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>Node.js</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="45"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Data & AI -->
+        <div class="skill-category glass-card anim-slide-up">
+          <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+          <h3>Data & AI</h3>
+          <div class="skill-bar-group">
+            <div class="skill-item"><span>Machine Learning</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="50"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>Data Analytics</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>scikit-learn</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="55"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>Pandas / NumPy</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>Power BI / Cognos</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tools & Core CS -->
+        <div class="skill-category glass-card anim-slide-up">
+          <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools & Core CS</h3>
+          <div class="skill-bar-group">
+            <div class="skill-item"><span>Git / GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>Linux</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="35"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>MongoDB</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="60"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>OpenCV</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="55"></div>
+              </div>
+            </div>
+            <div class="skill-item"><span>DBMS</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title anim-reveal">Featured <span class="highlight">Projects</span></h2>
+      <div class="section-line"></div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card anim-slide-up" id="project-medivista">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-heartbeat"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/Arhaan-H" target="_blank" rel="noopener" class="project-link-btn"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>MediVista – AI Medication System</h3>
+            <p>Engineered a disease prediction system using Decision Tree & SVM classifiers, achieving <strong>92%
+                accuracy</strong> and reducing diagnostic time by 30%.</p>
+            <ul class="project-highlights">
+              <li>NLP preprocessing & cross-validation improving reliability by 20%</li>
+              <li>90%+ accuracy in symptom-based predictions</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>scikit-learn</span><span>SVM</span><span>NLP</span><span>pandas</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card glass-card anim-slide-up" id="project-restaurant">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-utensils"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/Arhaan-H" target="_blank" rel="noopener" class="project-link-btn"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Restaurant Management System</h3>
+            <p>Full-stack restaurant app with integrated SQL database, improving order and menu processing efficiency by
+              <strong>30%</strong>.
+            </p>
+            <ul class="project-highlights">
+              <li>SQL-driven CRUD reducing manual data handling by 40%</li>
+              <li>Interactive UI enhancing order placement speed by 25%</li>
+            </ul>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card glass-card anim-slide-up" id="project-research">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-flask"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/Arhaan-H" target="_blank" rel="noopener" class="project-link-btn"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>IIT KGP Research – Data Annotation Pipeline</h3>
+            <p>Developed annotation protocols boosting labelling accuracy by <strong>15%</strong> and optimized data
+              pipelines reducing error rates by <strong>40%</strong>.</p>
+            <ul class="project-highlights">
+              <li>15,000+ data samples annotated with Likert-scale scoring</li>
+              <li>20% improvement in model validation performance</li>
+            </ul>
+            <div class="project-tags">
+              <span>Python</span><span>ML Pipeline</span><span>Data Annotation</span><span>QA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title anim-reveal">Experience & <span class="highlight">Leadership</span></h2>
+      <div class="section-line"></div>
+      <div class="timeline">
+        <div class="timeline-item anim-slide-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-badge">Research</div>
+            <h3>Research Intern</h3>
+            <h4><i class="fas fa-building"></i> IIT Kharagpur</h4>
+            <p>Developed annotation protocols increasing labelling accuracy by 15%. Annotated 15,000+ samples. Optimized
+              QA data pipelines, reducing error rates by 40%.</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-slide-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-badge">Leadership</div>
+            <h3>Marketing & Sales Coordinator</h3>
+            <h4><i class="fas fa-music"></i> Sunburn Event</h4>
+            <p>Coordinated marketing operations, managed on-ground sales logistics, and led a team of promoters for one
+              of India's biggest music festivals.</p>
+          </div>
+        </div>
+        <div class="timeline-item anim-slide-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-badge">Community</div>
+            <h3>B.Tech CSE – Big Data Analytics</h3>
+            <h4><i class="fas fa-graduation-cap"></i> Lovely Professional University</h4>
+            <p>Pursuing specialization in Big Data Analytics with focus on AI/ML, Cloud Computing, and full-stack
+              development. Active participant in hackathons and coding competitions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-title anim-reveal">Achievements & <span class="highlight">Certifications</span></h2>
+      <div class="section-line"></div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card anim-slide-up">
+          <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+          <h3>MEDHA Hackathon</h3>
+          <p>Secured a rank among the top 5 Teams</p>
+          <span class="achievement-date">Oct 2025</span>
+        </div>
+        <div class="achievement-card glass-card anim-slide-up">
+          <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+          <h3>Deloitte Job Simulation</h3>
+          <p>Data Analytics – Completed Successfully</p>
+          <span class="achievement-date">July 2025</span>
+        </div>
+        <div class="achievement-card glass-card anim-slide-up">
+          <div class="achievement-icon"><i class="fas fa-award"></i></div>
+          <h3>Code Caravan</h3>
+          <p>Secured 2nd Place</p>
+          <span class="achievement-date">Mar 2025</span>
+        </div>
+        <div class="achievement-card glass-card anim-slide-up">
+          <div class="achievement-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Celestia</h3>
+          <p>Secured 2nd Place</p>
+          <span class="achievement-date">Mar 2025</span>
+        </div>
+        <div class="achievement-card glass-card anim-slide-up">
+          <div class="achievement-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3>Sunburn Event</h3>
+          <p>Coordinated Marketing Operations</p>
+          <span class="achievement-date">Sept 2024</span>
+        </div>
+      </div>
+
+      <h3 class="cert-title anim-reveal">Certifications</h3>
+      <div class="cert-grid">
+        <div class="cert-item glass-card anim-slide-up"><i class="fas fa-cloud"></i><span>Cloud Analytics –
+            Oracle</span></div>
+        <div class="cert-item glass-card anim-slide-up"><i class="fas fa-chart-bar"></i><span>R Programming for Business
+            Analytics – NPTEL</span></div>
+        <div class="cert-item glass-card anim-slide-up"><i class="fas fa-database"></i><span>RDBMS – IBM</span></div>
+        <div class="cert-item glass-card anim-slide-up"><i class="fab fa-python"></i><span>Python – IBM</span></div>
+        <div class="cert-item glass-card anim-slide-up"><i class="fas fa-cogs"></i><span>Software Dev Methodologies –
+            Coursera</span></div>
+        <div class="cert-item glass-card anim-slide-up"><i class="fas fa-pen-nib"></i><span>Copywriting & SEO –
+            Udemy</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RESUME / CV ==================== -->
+  <section id="resume" class="section">
+    <div class="container">
+      <h2 class="section-title anim-reveal">Download My <span class="highlight">Resume</span></h2>
+      <div class="section-line"></div>
+      <div class="resume-wrapper anim-slide-up">
+        <div class="resume-card glass-card">
+          <div class="resume-icon-wrap">
+            <div class="resume-icon-ring"></div>
+            <i class="fas fa-file-alt resume-icon"></i>
+          </div>
+          <h3>Arhaan Gupta</h3>
+          <p class="resume-subtitle">B.Tech CSE – Big Data Analytics</p>
+          <div class="resume-highlights">
+            <span><i class="fas fa-brain"></i> AI / ML</span>
+            <span><i class="fas fa-cloud"></i> Cloud</span>
+            <span><i class="fas fa-database"></i> Big Data</span>
+            <span><i class="fas fa-code"></i> Full-Stack</span>
+          </div>
+          <a href="Arhaan_Gupta_CV.pdf" download class="btn btn-primary resume-btn">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <p class="resume-note">PDF · Updated Feb 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title anim-reveal">Get In <span class="highlight">Touch</span></h2>
+      <div class="section-line"></div>
+      <div class="contact-grid">
+        <div class="contact-info anim-slide-right">
+          <div class="contact-links">
+            <a href="mailto:arhaangupta475@gmail.com" class="contact-link glass-card">
+              <i class="fas fa-envelope"></i>
+              <div><strong>Email</strong><span>arhaangupta475@gmail.com</span></div>
+            </a>
+            <a href="tel:+917619053626" class="contact-link glass-card">
+              <i class="fas fa-phone"></i>
+              <div><strong>Phone</strong><span>+91-7619053626</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/arhaan-gupta" target="_blank" rel="noopener"
+              class="contact-link glass-card">
+              <i class="fab fa-linkedin"></i>
+              <div><strong>LinkedIn</strong><span>Arhaan Gupta</span></div>
+            </a>
+            <a href="https://github.com/Arhaan-H" target="_blank" rel="noopener" class="contact-link glass-card">
+              <i class="fab fa-github"></i>
+              <div><strong>GitHub</strong><span>Arhaan-H</span></div>
+            </a>
+            <p class="contact-desc">I'm always open to discussing new projects, creative ideas, or opportunities to be
+              part of your vision. Let's build something amazing together!</p>
+          </div>
+        </div>
+        <div class="contact-form-wrap anim-slide-left">
+          <form id="contact-form" class="glass-card">
+            <!-- Web3Forms Configuration -->
+            <input type="hidden" name="access_key" value="5a848534-23a6-4cdc-b8af-86be86e10182" />
+            <input type="hidden" name="subject" value="New Portfolio Contact Message" />
+            <input type="hidden" name="from_name" value="Portfolio Contact Form" />
+            <input type="checkbox" name="botcheck" style="display: none;" />
+
+            <div class="form-group">
+              <input type="text" id="form-name" name="name" placeholder=" " required />
+              <label for="form-name">Your Name</label>
+              <span class="form-glow"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="form-email" name="email" placeholder=" " required />
+              <label for="form-email">Your Email</label>
+              <span class="form-glow"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="form-message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="form-message">Your Message</label>
+              <span class="form-glow"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send
+              Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo">AG<span class="logo-dot">.</span></a>
+        <div class="footer-socials">
+          <a href="https://github.com/Arhaan-H" target="_blank" rel="noopener" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/arhaan-gupta" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="mailto:arhaangupta475@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Arhaan Gupta. Built with passion & code.</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
