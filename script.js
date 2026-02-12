@@ -1,8 +1,3 @@
-/* ===================================================
-   ARHAAN GUPTA – PORTFOLIO  |  script.js
-   Interactivity, Particles, Animations
-   =================================================== */
-
 (function () {
   "use strict";
 
